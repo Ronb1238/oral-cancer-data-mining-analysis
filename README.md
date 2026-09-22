@@ -32,53 +32,76 @@ Rather than applying machine learning blindly, this project focuses on **critica
 
 6. **Core Conclusion:**
    * Machine learning algorithms cannot extract signal from uncorrelated noise[cite: 5]. The failure of all model families to outperform random guessing proves that the dataset is synthetically generated with uniform feature distribution[cite: 1, 5].
-  
-🚀 Getting Started
-Prerequisites
-Python 3.9+
-Installation
 
-Clone the repository:
+## 🚀 Getting Started
 
+### Prerequisites
+
+* **Python 3.9+** installed.
+
+### Installation & Execution
+
+#### 1. Clone the Repository
+
+```bash
 git clone https://github.com/your-username/oral-cancer-data-mining-analysis.git
 cd oral-cancer-data-mining-analysis
+```
 
-Create and activate a virtual environment:
+#### 2. Create and Activate a Virtual Environment
 
+**Linux / macOS:**
+
+```bash
 python -m venv venv
-
-Linux / macOS:
-
 source venv/bin/activate
+```
 
-Windows:
+**Windows:**
 
+```bash
+python -m venv venv
 venv\Scripts\activate
+```
 
-Install the required dependencies:
+#### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
-Dataset
+```
 
-Download oral_cancer_prediction_dataset.csv from Kaggle and place it in the project root directory.
+#### 4. Download the Dataset
 
-Running the Analysis
+Download `oral_cancer_prediction_dataset.csv` from Kaggle and place it in the root directory.
 
-Association Rules:
+#### 5. Run an Analysis Module
 
+**Association Rules:**
+
+```bash
 python src/02_association_rules.py
+```
 
-K-Means Clustering:
+**K-Means Clustering:**
 
+```bash
 python src/03_kmeans_clustering.py
+```
 
-Neural Network:
+**Neural Network:**
 
+```bash
 python src/04_neural_network.py
-🛠️ Technologies Used
-Category	Technologies
-Language	Python
-Data Processing	Pandas, NumPy
-Machine Learning	Scikit-Learn
-Data Mining	Mlxtend
-Visualization	Matplotlib, Seaborn
+```
+
+---
+
+## 🛠️ Technologies Used
+
+| Category                           | Technologies          |
+| ---------------------------------- | --------------------- |
+| **Language**                       | Python                |
+| **Data Processing**                | Pandas, NumPy         |
+| **Machine Learning & Data Mining** | Scikit-Learn, Mlxtend |
+| **Visualization**                  | Matplotlib, Seaborn   |
+
