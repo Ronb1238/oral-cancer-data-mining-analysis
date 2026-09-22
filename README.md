@@ -32,3 +32,53 @@ Rather than applying machine learning blindly, this project focuses on **critica
 
 6. **Core Conclusion:**
    * Machine learning algorithms cannot extract signal from uncorrelated noise[cite: 5]. The failure of all model families to outperform random guessing proves that the dataset is synthetically generated with uniform feature distribution[cite: 1, 5].
+  
+🚀 Getting Started
+Prerequisites
+Python 3.9+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/oral-cancer-data-mining-analysis.git
+cd oral-cancer-data-mining-analysis
+
+Create and activate a virtual environment:
+
+python -m venv venv
+
+Linux / macOS:
+
+source venv/bin/activate
+
+Windows:
+
+venv\Scripts\activate
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+Dataset
+
+Download oral_cancer_prediction_dataset.csv from Kaggle and place it in the project root directory.
+
+Running the Analysis
+
+Association Rules:
+
+python src/02_association_rules.py
+
+K-Means Clustering:
+
+python src/03_kmeans_clustering.py
+
+Neural Network:
+
+python src/04_neural_network.py
+🛠️ Technologies Used
+Category	Technologies
+Language	Python
+Data Processing	Pandas, NumPy
+Machine Learning	Scikit-Learn
+Data Mining	Mlxtend
+Visualization	Matplotlib, Seaborn
